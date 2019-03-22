@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00e676"
+    tools:context=".PersonaActivity">
+
+   <ImageView
+       android:id="@+id/img"
+       android:src="@mipmap/usuario"
+       android:layout_width="match_parent"
+       android:layout_height="200dp" />
+
+    <TextView
+        android:id="@+id/nombre"
+        android:textSize="15dp"
+        android:text="Nombre"
+        android:layout_below="@id/img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/apellido"
+        android:textSize="15dp"
+        android:text="Apellido"
+        android:layout_below="@id/nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/edad"
+        android:textSize="15dp"
+        android:text="Edad"
+        android:layout_below="@id/apellido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:id="@+id/telefono"
+        android:textSize="15dp"
+        android:text="Teléfono"
+        android:layout_below="@id/edad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:text="LLAMAR"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/llamar"
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+</RelativeLayout>
